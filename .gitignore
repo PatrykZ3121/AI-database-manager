@@ -1,0 +1,4 @@
+# Wyklucz pliki konfiguracyjne
+config_secret.json
+*.pem
+.env
