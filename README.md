@@ -1,6 +1,6 @@
 # SQL ChatBot z LLM i MySQL
 
-Projekt wykonany w języku python umożliwia generowanie i wykonywanie zapytań SQL do bazy MySQL na podstawie poleceń użytkownika, wykorzystując lokalny model LLM (np. Llama 3 przez Ollama).
+Projekt wykonany w języku python umożliwia generowanie i wykonywanie zapytań SQL do bazy MySQL na podstawie poleceń użytkownika, wykorzystując lokalny model LLM (np. Llama 3 od Ollama).
 
 ## Funkcjonalności
 
