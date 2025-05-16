@@ -13,7 +13,22 @@ Projekt wykonany w języku python umożliwia generowanie i wykonywanie zapytań 
 ## Wymagania
 
 - Python 3.8+
-- MySQL (lub MariaDB)
+- Po uruchomieniu aplikacja poprosi użytkownika o wpisanie polecenia (promptu) w języku polskim. Następnie:
+
+Jeśli polecenie dotyczy operacji na bazie danych (np. zapytania SELECT, INSERT, UPDATE, DELETE lub innych działań związanych z bazą MySQL):
+
+Aplikacja automatycznie wygeneruje odpowiedni kod SQL przy pomocy lokalnego modelu językowego (LLM).
+
+Wygenerowane zapytanie zostanie wykonane na wskazanej bazie danych.
+
+Wynik działania zostanie wyświetlony użytkownikowi w czytelnej formie.
+
+Jeśli polecenie nie dotyczy bazy danych (np. jest pytaniem ogólnym lub niezwiązanym z SQL):
+
+Aplikacja wyświetli komunikat:
+Polecam skorzystać z innego ChatBota.
+
+Dzięki temu użytkownik może w prosty sposób zarządzać bazą danych za pomocą naturalnego języka, bez konieczności ręcznego pisania zapytań SQL.
 - [Ollama](https://ollama.com/) (np. model llama3)
 - Plik `config_secret.json` z danymi dostępowymi do bazy
 - Zainstalowane biblioteki Python:
@@ -50,4 +65,14 @@ ollama run llama3
 
 
 ## Uruchom aplikację
+
+Po uruchomieniu aplikacja poprosi użytkownika o wpisanie polecenia (promptu) w języku polskim. Następnie:
+Jeśli polecenie dotyczy operacji na bazie danych (np. zapytania SELECT, INSERT, UPDATE, DELETE lub innych działań związanych z bazą MySQL):
+Aplikacja automatycznie wygeneruje odpowiedni kod SQL przy pomocy lokalnego modelu językowego (LLM).
+Wygenerowane zapytanie zostanie wykonane na wskazanej bazie danych.
+Wynik działania zostanie wyświetlony użytkownikowi w czytelnej formie.
+Jeśli polecenie nie dotyczy bazy danych (np. jest pytaniem ogólnym lub niezwiązanym z SQL):
+Aplikacja wyświetli komunikat:
+Polecam skorzystać z innego ChatBota.
+Dzięki temu użytkownik może w prosty sposób zarządzać bazą danych za pomocą naturalnego języka, bez konieczności ręcznego pisania zapytań SQL.
 
